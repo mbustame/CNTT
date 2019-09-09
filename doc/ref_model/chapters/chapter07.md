@@ -40,6 +40,7 @@
   * [7.10.2 Encryption.](#7.4.2)
   * [7.10.3 Platform Patching.](#7.4.3)
   * [7.10.4 Boot Integrity Measurement (TPM).](#7.4.4)
+  * [7.10.5 VIM.](#7.4.5)
 * [7.11 Certification requirements](#7.8)
 
 <a name="7.1"></a>
@@ -572,7 +573,7 @@ NFVI operators should ensure that the platform including the components (hypervi
 Using trusted platform module (TPM) as a hardware root of trust, the measurement of system sensitive components such as platform firmware, BIOS, bootloader, OS kernel, and other system components can be securely stored and verified. NFVI Operators should ensure that the platform measurement can only be taken when the system is reset or rebooted; there needs to be no ability to write the new platform measurement in TPM during system run-time. The validation of the platform measurements can be performed by TPM’s launch control policy (LCP) or through the remote attestation server
 
 <a name="7.10.5"></a>
-### 7.10.4 VIM 
+### 7.10.5 VIM 
 
 Resources management is essential. Requests coming from NFVO or VNFM to the VIM must validated and the integrity of these requets must be verified.
 
