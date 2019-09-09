@@ -5,9 +5,6 @@
 ## Table of Contents
 * [7.1 Introduction.](#7.1)
 * [7.2 Principles and Guidelines.](#7.2)
-  * [7.2.1 Overarching Objectives and Goals.](#7.2.1)
-  * [7.2.2 Verification Methodologies.](#7.2.2)
-  * [7.2.3 Governance.](#7.2.3)  
 * [7.3 Common standards.](#7.3)
   * [7.3.1 Potential attack vectors.](#7.3.1)
   * [7.3.2 Testing demarcation points.](#7.3.2)
@@ -48,34 +45,16 @@
 <a name="7.1"></a>
 ## 7.1 Introduction
 
-This document includes process flow, logistics, and requirements which must be satisfied to ensure Virtualized Network Functions (VNFs) meet the design, feature, and capability expectations of VNF consumers to deliver NFV promoting the use and scalability of SDN capabilities. This chapter captures the core fundamentals and steps needed to certify VNFs on target NFVi frameworks and architectures which drives more work into the community, resulting in pre-certified VNFs on core capabilities ultimately reducing the amount of time and cost it takes each operator to on-board and maintain vendor provided VNFs.
+As noted in Metcalfe's law, the value of a network is proportional to the square of the number of connected end points. Therefore it is imparitive to defend endpoints, and the network, from compromise. This document defines requirements which must be satisfied to ensure Virtualized Network Functions (VNFs) meet the Security expectations of VNF consumers.  
 
 <p align="center"><img src="../figures/ch10_ref_model_lfn.png" alt="scope" title="Scope" width="100%"/></p>
-<p align="center"><b>Figure 8-1:</b> CNTT relation to LFN OVP</p>
+<p align="center"><b>Figure 7-1:</b> CNTT relation to LFN OVP</p>
 
 <a name="7.2"></a>
 ## 7.2 Principles and Guidelines
 
-The objectives of the Security verification program are to deliver certified reference architectures which match VNF-developer specifications, levering the OVP ecosystem as the vehicle for deliverying security validated NFV.
+The objectives of the Security verification program are to deliver best practices from the information security triad, Confidentiality, Integrity and Availability to the VNF software lifecycle. The primary areas of review will be platform security, workload security and VNF security with a focus on encryption, software controls and network controls.
 
-These core principles will guide NFV verification deliverables
-
-<a name="7.2.1"></a>
-### 7.2.1 Overarching Objectives and Goals
-
-1. Deliver security certified reference architecture which matches VNF-developer specifications<br>
-2. All accomplished with augmentation to the current OVP ecosystem.<br>
-3. Certified VNFs will on-board and function first shot<br>
-
-<a name="7.2.2"></a>
-### 7.2.2 Verification Methodologies
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-<a name="7.2.3"></a>
-### 7.2.3 Governance
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-<a name="7.3"></a>
 ## 7.3 Common standards
 
 Security vulnerabilities and attack vectors are everywhere.  The telecom industry and its cloud infrastructures are even more vulnerable to potential attacks due to the ubiquitous nature of the infrastructures and services combined with the vital role Telecommunications play in the modern world.   The attack vectors are many and varied, ranging from the potential for exposure of sensitive data, both personal and corporate, to weaponized disruption to the global Telecommunications networks.  The threats can take the form of a physical attack on the locations the infrastructure hardware is housed, to network attacks such as denial of service and targeted corruption of the network service applications themselves.  Whatever the source, any NFVI infrastructure built needs to be able to withstand attacks in whatever form they take.
